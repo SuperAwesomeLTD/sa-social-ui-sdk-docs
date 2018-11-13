@@ -1,0 +1,317 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Displaying a Profile &mdash; Android Social SDK 2.42.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Android Social SDK 2.42.0 documentation" href="index.html"/>
+        <link rel="next" title="Displaying the Art Tool" href="050input_arttool.html"/>
+        <link rel="prev" title="Displaying a Profile" href="044content_profile.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="/">
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+                <div class="version">
+                    <a href="index.html" class="version_a">
+                         Android Social SDK 2.42.0
+                    </a>
+                </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01general.html">General</a></li>
+<li class="toctree-l1"><a class="reference internal" href="020setup.html">      Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="021skinning.html">      Skinning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="030auth_registerbutton.html">      Adding a registration button</a></li>
+<li class="toctree-l1"><a class="reference internal" href="031auth_loginbutton.html">      Adding a login button</a></li>
+<li class="toctree-l1"><a class="reference internal" href="032auth_registerusername.html">      Register username input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="033auth_registerpassword.html">      Register password input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="034auth_login.html">      Login input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="035auth_passwordrecovery.html">      Set password recovery email</a></li>
+<li class="toctree-l1"><a class="reference internal" href="036auth_recoverpassword.html">      Recover password</a></li>
+<li class="toctree-l1"><a class="reference internal" href="037auth_avatar.html">      Selecting an avatar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="038auth_settings.html">      User settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="040content_feed.html">      Displaying Feeds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="041content_feeditem.html">      Displaying a Feed Item</a></li>
+<li class="toctree-l1"><a class="reference internal" href="042content_comments.html">      Displaying Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="043content_search.html">      Displaying Search Results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="044content_profile.html">      Displaying a Profile</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">      Displaying Stickers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#basic-setup">Basic setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#delegate">Delegate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#skinning">Skinning</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="050input_arttool.html">      Displaying the Art Tool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="051input_comment.html">      Writing a comment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="052input_caption.html">      Adding a caption</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Android Social SDK</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Displaying a Profile</li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/SuperAwesomeLTD/sa-unity-sdk" class="fa fa-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="displaying-a-profile">
+<h1>Displaying a Profile<a class="headerlink" href="#displaying-a-profile" title="Permalink to this headline">¶</a></h1>
+<p><strong>Summary</strong>: Provides default UI for using stickers.</p>
+<p>Includes functionality to see different sticker packs and the sticker items
+associated with each sticker pack.</p>
+<p>Includes functionality that automatically links it with the <strong>Comments</strong>
+view and the <em>Art Tool</em> to add &#8220;sticker&#8221; as comments drawing elements.</p>
+<p>...INSERT IMAGE HERE...</p>
+<div class="section" id="basic-setup">
+<h2>Basic setup<a class="headerlink" href="#basic-setup" title="Permalink to this headline">¶</a></h2>
+<p>In order to add it to an Activity, first we must add it to our Fragment or
+Activity XML layout.</p>
+<div class="highlight-XML"><div class="highlight"><pre><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="nt">&lt;android.support.design.widget.CoordinatorLayout</span>
+  <span class="na">tools:context=</span><span class="s">&quot;.activities.MyProfileActivity&quot;</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;tv.superawesome.pj.ui.stickers.views.StickerPackKeyboardView</span>
+    <span class="na">android:id=</span><span class="s">&quot;@+id/sticker_keyboard&quot;</span>
+    <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+    <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span><span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/android.support.design.widget.CoordinatorLayout&gt;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Notice the actual instance is called <strong>StickerPackKeyboardView</strong></p>
+</div>
+<p>Once its taken its place in our layout, we can hook it up in code:</p>
+<div class="highlight-java"><div class="highlight"><pre><span class="kd">class</span> <span class="nc">MyProfileActivity</span><span class="o">:</span> <span class="n">AppCompatActivity</span><span class="o">()</span> <span class="o">{</span>
+
+  <span class="n">override</span> <span class="n">fun</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">:</span> <span class="n">Bundle</span><span class="o">?)</span> <span class="o">{</span>
+    <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">)</span>
+
+    <span class="n">sticker_keyboard</span><span class="o">.</span><span class="na">setSkin</span><span class="o">(</span><span class="n">StickerPackKeyboardSkin</span><span class="o">())</span>
+    <span class="n">sticker_keyboard</span><span class="o">.</span><span class="na">bindTo</span><span class="o">(</span><span class="n">context</span><span class="o">.</span><span class="na">application</span><span class="o">.</span><span class="na">store</span><span class="o">)</span>
+    <span class="n">sticker_keyboard</span><span class="o">.</span><span class="na">fetchStickers</span><span class="o">()</span>
+  <span class="o">}</span>
+
+  <span class="n">override</span> <span class="n">fun</span> <span class="nf">onDestroy</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">sticker_keyboard</span><span class="o">.</span><span class="na">unbindFrom</span><span class="o">(</span><span class="n">context</span><span class="o">.</span><span class="na">application</span><span class="o">.</span><span class="na">store</span><span class="o">)</span>
+    <span class="kd">super</span><span class="o">.</span><span class="na">onDestroy</span><span class="o">()</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>And that&#8217;s it!</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Notice we have used Kotlin&#8217;s <strong>Kapt</strong> extension in order to have direct access to the view via its ID. Good alternatives are Jake Wharton&#8217;s <a class="reference external" href="http://jakewharton.github.io/butterknife/">ButterKnife</a> library or calling <strong>findViewById</strong> directly.</p>
+</div>
+</div>
+<div class="section" id="delegate">
+<h2>Delegate<a class="headerlink" href="#delegate" title="Permalink to this headline">¶</a></h2>
+<p>Most of the functionality that the view performs is executed internally and is
+not exposed to the outside.
+However there are cases where it&#8217;s not wise to keep certain actions internal
+so as to allow for more flexibility.</p>
+<p>To this extent, the view provides a Delegate interface that it
+uses to talk to the outside world. Any class (activity, fragment, etc) can
+implement it.</p>
+<div class="highlight-java"><div class="highlight"><pre><span class="kd">interface</span> <span class="nc">IStickerPackKeyboardViewDelegate</span> <span class="o">{</span>
+  <span class="n">fun</span> <span class="nf">onTapSticker</span><span class="o">(</span><span class="n">sticker</span><span class="o">:</span> <span class="n">Sticker</span><span class="o">,</span> <span class="n">stickerBitmap</span><span class="o">:</span> <span class="n">Bitmap</span><span class="o">)</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>To assign the view&#8217;s delegate to some object that implements it:</p>
+<div class="highlight-java"><div class="highlight"><pre><span class="n">sticker_keyboard</span><span class="o">.</span><span class="na">setDelegate</span><span class="o">(</span><span class="n">some_object</span><span class="o">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="skinning">
+<h2>Skinning<a class="headerlink" href="#skinning" title="Permalink to this headline">¶</a></h2>
+<p>Any skin for this view must conform to the following interface:</p>
+<div class="highlight-java"><div class="highlight"><pre><span class="c1">// TBC</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="050input_arttool.html" class="btn btn-neutral float-right" title="Displaying the Art Tool" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="044content_profile.html" class="btn btn-neutral" title="Displaying a Profile" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, SuperAwesome Ltd.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Versions</span>
+      2.42.0
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        
+          <dd><a href="/social-android-ui-sdk/latest">2.42.0</a></dd>
+        
+      </dl>
+    </div>
+  </div>
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2.42.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

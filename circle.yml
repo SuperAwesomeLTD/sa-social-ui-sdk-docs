@@ -1,0 +1,26 @@
+machine:
+    node:
+        version: 6.3.1
+
+dependencies:
+    pre:
+        - sudo apt-get update
+        - sudo apt-get install -y python-sphinx python-dev
+        - sudo pip install awscli --ignore-installed six
+    override:
+        - ./lmake.sh
+
+test:
+    override:
+        - echo "Tests"
+
+deployment:
+    docker:
+        branch: [develop]
+        commands:
+            - ./deploy.sh develop
+
+    docker_master:
+        branch: [master]
+        commands:
+            - ./deploy.sh master
