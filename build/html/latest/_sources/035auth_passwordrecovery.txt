@@ -8,7 +8,8 @@ Includes functionality that allows the input of emails as
 well as validation against rules that can be setup server-side,
 such as minimum and maximum username length, regex rules, etc.
 
-...INSERT IMAGE HERE...
+.. image:: img/035.passwordrecovery.png
+	:width: 50%
 
 Basic setup
 -----------

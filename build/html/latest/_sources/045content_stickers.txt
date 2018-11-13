@@ -9,7 +9,8 @@ associated with each sticker pack.
 Includes functionality that automatically links it with the **Comments**
 view and the *Art Tool* to add "sticker" as comments drawing elements.
 
-...INSERT IMAGE HERE...
+.. image:: img/045.stickers.png
+	:width: 50%
 
 Basic setup
 -----------
@@ -89,4 +90,4 @@ Any skin for this view must conform to the following interface:
 
 .. code-block:: java
 
-    // TBC 
+    // TBC

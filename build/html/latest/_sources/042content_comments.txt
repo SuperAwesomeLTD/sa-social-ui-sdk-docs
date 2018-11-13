@@ -6,8 +6,8 @@ and to report comments to moderators.
 
 Provides support for text, image and “sticker” comments.
 
-
-...INSERT IMAGE HERE...
+.. image:: img/042.comment.png
+	:width: 50%
 
 Basic setup
 -----------
@@ -93,4 +93,4 @@ Any skin for this view must conform to the following interface:
 
 .. code-block:: java
 
-    // TBC 
+    // TBC

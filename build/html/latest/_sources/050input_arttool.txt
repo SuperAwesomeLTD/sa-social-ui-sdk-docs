@@ -6,7 +6,8 @@ Displaying the Art Tool
 Includes functionality to that allows a user to create drawings with different
 brushes, colours, stickers, photos, etc.
 
-...INSERT IMAGE HERE...
+.. image:: img/050.arttool.png
+	:width: 50%
 
 Basic setup
 -----------
@@ -87,4 +88,4 @@ Any skin for this view must conform to the following interface:
 
 .. code-block:: java
 
-    // TBC 
+    // TBC

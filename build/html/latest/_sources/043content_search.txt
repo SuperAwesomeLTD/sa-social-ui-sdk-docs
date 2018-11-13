@@ -13,7 +13,8 @@ different tiles.
 
 Includes functionality to follow or unfollow a user, channel or tag.
 
-...INSERT IMAGE HERE...
+.. image:: img/043.search.png
+	:width: 50%
 
 Basic setup
 -----------
@@ -105,4 +106,4 @@ Any skin for this view must conform to the following interface:
 
 .. code-block:: java
 
-    // TBC 
+    // TBC

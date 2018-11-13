@@ -3,7 +3,8 @@ Adding a caption
 
 **Summary**: Provides default UI adding captions to a creation or a share.
 
-...INSERT IMAGE HERE...
+.. image:: img/052.caption.png
+	:width: 50%
 
 Basic setup
 -----------
@@ -86,4 +87,4 @@ Any skin for this view must conform to the following interface:
 
 .. code-block:: java
 
-    // TBC 
+    // TBC

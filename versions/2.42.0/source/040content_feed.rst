@@ -11,7 +11,8 @@ Includes support for displaying image and video content within content tiles.
 Content tiles include author information, in the form of a username and user
 avatar, and support the presence of a text comment as part of the content.
 
-...INSERT IMAGE HERE...
+.. image:: img/040.feed.png
+	:width: 50%
 
 Basic setup
 -----------

@@ -9,7 +9,8 @@ number of followers, following count, etc.
 Includes functionality to follow or unfollow a user (if it's not your own
 user's profile) or to get followers (if it's your profile).
 
-...INSERT IMAGE HERE...
+.. image:: img/044.profile.png
+	:width: 50%
 
 Basic setup
 -----------

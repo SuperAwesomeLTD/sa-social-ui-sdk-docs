@@ -12,7 +12,8 @@ drawing type comments.
 .. note::
     This view is linked with the **Comment** view. Adding a comment here will update the list of comments.
 
-...INSERT IMAGE HERE...
+.. image:: img/042.comment.png
+	:width: 50%
 
 Basic setup
 -----------
@@ -94,4 +95,4 @@ Any skin for this view must conform to the following interface:
 
 .. code-block:: java
 
-    // TBC 
+    // TBC

@@ -7,8 +7,9 @@ Includes functionality that allows the input of usernames as well as validation
 against rules that can be setup server-side, such as minimum and maximum
 username length, regex rules, etc.
 
-...INSERT IMAGE HERE...
-
+.. image:: img/032.registerusername.png
+	:width: 50%
+	
 Basic setup
 -----------
 

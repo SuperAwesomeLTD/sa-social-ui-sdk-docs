@@ -13,7 +13,8 @@ Includes an embedded **video player** that provides default UI for playback
 of video content. Includes functionality for play, pause, scrub, replay,
 and fullscreen.
 
-...INSERT IMAGE HERE...
+.. image:: img/040.feed.png
+	:width: 50%
 
 Basic setup
 -----------
@@ -107,4 +108,4 @@ Any skin for this view must conform to the following interface:
 
 .. code-block:: java
 
-    // TBC 
+    // TBC

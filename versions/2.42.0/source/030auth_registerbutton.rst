@@ -7,7 +7,8 @@ Includes functionality for specifying a username and password function, so the
 information source can be mostly anything (an **EditText** view, another
 function, etc)
 
-...INSERT IMAGE HERE...
+.. image:: img/033.registerpassword.png
+	:width: 50%
 
 Basic setup
 -----------

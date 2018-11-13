@@ -9,7 +9,8 @@ update their avatar or cover image, update their bio.
 Includes out-of-the-box functionality that can link to privacy policy and
 terms&conditions urls.
 
-...INSERT IMAGE HERE...
+.. image:: img/038.settings.png
+	:width: 50%
 
 Basic setup
 -----------

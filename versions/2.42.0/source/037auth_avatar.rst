@@ -6,7 +6,8 @@ Selecting an avatar
 Includes functionality that displays avatars (or "stickers") as a 4xN grid
 that users can select from and update their avatar image.
 
-...INSERT IMAGE HERE...
+.. image:: img/037.avatar.png
+	:width: 50%
 
 Basic setup
 -----------
